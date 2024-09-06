@@ -1,0 +1,222 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+.applicant-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  
+}
+
+.applicant-content {
+  width: 100%;
+  
+}
+.snippet {
+  word-wrap: break-word; 
+  white-space: pre-wrap; 
+  overflow-wrap: break-word; 
+  hyphens: auto; 
+}
+
+.att-container {
+  display: flex;
+  /* justify-content: space-between;
+  align-items: center; */
+  flex-direction: column;
+  text-decoration: none;
+}
+.att-container a {
+  text-decoration: none;
+}
+
+.applicant-image {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 25px;
+  cursor: pointer;
+  background-color:green;
+}
+
+.applicant-info {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.applicant-info h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.applicant-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.linkkk {
+  padding: 10px 15px;
+  background-color:whitesmoke;
+  color: blue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.att-container{
+  gap: 10px;
+}
+
+.linkkk:hover {
+  background-color: rgb(49, 74, 49);
+  color: whitesmoke;
+  
+}
+.mainContainer {
+  max-width: 1280px;
+  margin: auto;
+}
+.mainContainer img {
+  margin-top: 20px;
+}
+.topLogon {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: space-between;
+  margin: auto;
+  margin-left: 10px;
+  position: relative;
+  margin-right: 10px;
+  position: relative;
+}
+
+.profile {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: yellow;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  border: 5px solid white;
+}
+.search-page {
+  text-align: center;
+  padding: 20px;
+}
+.head1 {
+  color: green;
+}
+.search-page input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 200px;
+}
+.search-page button {
+  padding: 10px;
+  color: white;
+  background-color: green;
+  border-radius: 7px;
+}
+.search-page button:hover{
+  background-color: rgb(50, 79, 50);
+}
+.Banner{
+width: '50%';
+ height:auto 
+}
+.applicant-info h2{
+  color: rgb(48, 46, 46);
+  margin-left: -30px;
+}
+
+.dd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.search-input-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  
+}
+.logout-button {
+  text-align: center;
+  background-color: whitesmoke; 
+  color: green;
+  font-size: 14px; 
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+
+}
+
+.hidden {
+  position: absolute;
+  top: 0 ;
+  right: 0;
+  /* background: white; */
+  display: none;
+}
+
+.search-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-top: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.search-suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-suggestions li:hover {
+  color: whitesmoke;
+  background-color: green;
+}
+
+@media only screen and (max-width:1200px)  {
+
+  .topLogon {
+    flex-direction: column;
+  }
+  .hidden {
+    display: flex;
+    padding: 3px;
+  }
+  .dd {
+    display: none;
+  }
+  
+}
